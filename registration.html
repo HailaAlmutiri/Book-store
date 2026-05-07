@@ -59,6 +59,7 @@ $(document).ready(function () {
 <script>
 
 document.getElementById("register").onsubmit = function(e) {
+e.preventDefault();
   var user = document.getElementById("username").value;
   var fieldFirstValue = document.getElementById("password1").value;
   var fieldSecondValue = document.getElementById("password2").value;

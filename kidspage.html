@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kids Books</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+
+    <div class="container mt-5">
+        <h2 class="text-center mb-5">Kids Category</h2>
+
+        <div class="row" id="b"></div>
+    </div>
+
+    <script>
+        getText('books.json');
+
+        async function getText(url) {
+            let response = await fetch(url);
+            let x = await response.json();
+            var ta = "";
+
+            for (let i = 0; i < x.length; i++) {
+              
+                if (x[i].category == "kids book") {
+                    
+                    ta += "<div class='col-md-3 mb-4'>";
+                    ta +=   "<div class='card h-100'>"; 
+                    ta +=     "<img src='" + x[i].img + "' class='card-img-top' style='height: 150px; object-fit: contain; padding: 10px;'>";
+                    ta +=     "<div class='card-body d-flex flex-column text-center'>";
+                    ta +=       "<h5 class='card-title font-weight-bold'>" + x[i].title + "</h5>";
+                    ta +=       "<p class='card-text'>Price: " + x[i].price + "</p>";
+                    ta +=       "<div class='mt-auto'>";
+                    ta +=         "<a href='singleProduct.html?id=" + i + "' class='btn btn-primary btn-sm'>";
+                    ta +=           "Learn more";
+                    ta +=         "</a>";
+                    ta +=       "</div>";
+                    ta +=     "</div>"; 
+                    ta +=   "</div>"; 
+                    ta += "</div>"; 
+                }
+            }
+            document.getElementById("b").innerHTML = ta;
+        }
+    </script>
+
+</body>
+</html

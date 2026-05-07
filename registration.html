@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Register</title>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</head>
+
+<body>
+<div class="register">
+<form id="register">
+
+<h1>CREATE ACCOUNT</h1>
+
+<label for="username">Username</label><br>
+<input type="text" id="username" required minlength="3" maxlength="30" ><br><br>
+
+<label>Password</label><br>
+<input type="password" id="password1" required minlength="3" maxlength="30"><br><br>
+
+<label>Confirm Password</label><br>
+<input type="password" id="password2" required minlength="3" maxlength="30"><br><br>
+
+
+<input type="checkbox" id="agree"> 
+<span id="terms">agree to the terms </span> <br><br>
+
+
+<button type="submit">Sign up</button>
+
+<br><br>
+<p> Already have account? <a href="login.html" target="_blank">Login</a></p>
+
+</form>
+</div>
+
+<div id="termsBox" style="display:none;">
+  <p>1. Users must provide accurate registration information.</p>
+  <p>2. Each account is for personal use only.</p>
+  <p>3. Users must keep their password private.</p>
+  <p>4. Copying or sharing website content without permission is not allowed.</p>
+  <p>5. The website may update these terms at any time.</p>
+</div>
+
+
+<script>
+$(document).ready(function () {
+  $("#terms").click(function () {
+    $("#termsBox").slideToggle();
+  });
+});
+</script>
+
+
+<script>
+
+document.getElementById("register").onsubmit = function(e) {
+  var user = document.getElementById("username").value;
+  var fieldFirstValue = document.getElementById("password1").value;
+  var fieldSecondValue = document.getElementById("password2").value;
+  var agree = document.getElementById("agree").checked;
+
+  var passPattern = /(?=.*[a-z])(?=.*[A-Z])(?=.*\d)/;
+
+  if (!passPattern.test(fieldFirstValue)) {
+    e.preventDefault();
+   Swal.fire({
+  icon: "warning",
+  title: "Weak Password",
+  text: "Password must include lowercase, uppercase, and a number",
+
+});
+    return;
+  }
+
+  if (fieldSecondValue !== fieldFirstValue) {
+    e.preventDefault();
+    Swal.fire({
+  icon: "error",
+  title: "Oops...",
+  text: "Passwords don't match"
+});
+    return;
+  }
+
+  if (agree == false) {
+    e.preventDefault();
+       Swal.fire({
+  icon: "warning",
+  title: "Please agree to the terms",
+
+});
+    return;
+  }
+
+  localStorage.setItem("username", user);
+  localStorage.setItem("password", fieldFirstValue);
+
+
+
+  Swal.fire({
+    icon:"success",
+    title:"Registered!"
+  }).then(()=>{
+    window.location.href="login.html";
+  });
+
+};
+</script>
+
+</body>
+</html>

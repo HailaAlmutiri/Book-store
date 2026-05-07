@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Product Details</title>
+
+    <link rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+<body>
+<div class="container mt-5">
+    <div id="product-details"></div>
+</div>
+<script>
+    var pp = "";
+    var tt = "";
+    getSingleProduct();
+    async function getSingleProduct() {
+        let response = await fetch("books.json");
+        let x = await response.json();
+        const params = new URLSearchParams(window.location.search);
+        const id = params.get("id");
+      let item = x[id];
+        if (item) {
+          pp = item.price;
+            tt = item.title;
+            var ta = "";
+            ta += "<div class='row'>";
+            ta += "<div class='col-md-6 text-center'>";
+            ta += "<img src='" + item.img + "' class='img-fluid'>";
+            ta += "</div>";
+            ta += "<div class='col-md-6'>";
+            ta += "<h2 class='font-weight-bold'>" + item.title + "</h2>";
+            ta += "<p class='h4'>" + item.price + " </p>";
+            ta += "<hr>";
+            ta += "<p><strong>Description:</strong> " + item.description + "</p>";
+            ta += "<button class='btn btn-light mb-3' onclick='toggled()'>Show Details</button>";
+            ta += "<div id='details-box' style='display:none;'>";
+            ta += "<p><strong>Author:</strong> " + item.author + "</p>";
+            ta += "<p><strong>Category:</strong> " + item.category + "</p>";
+            ta += "<p><strong>Language:</strong> " + item.language + "</p>";
+            ta += "<p><strong>Publish Date:</strong> " + item.publish_date + "</p>";
+            ta += "</div>";
+            ta += "<div class='mt-3'>";
+            ta += "<label>Quantity:</label>";
+            ta += "<select class='form-control' id='num' style='max-width:80px;'>";
+            ta += "<option value='1'>1</option>";
+            ta += "<option value='2'>2</option>";
+            ta += "<option value='3'>3</option>";
+            ta += "</select>";
+            ta += "</div>";
+            ta += "<button class='btn btn-light btn-block mt-4' onclick='add()'>";
+            ta += "Add To Cart";
+            ta += "</button>";
+            ta += "</div>";
+            ta += "</div>";
+            document.getElementById("product-details").innerHTML = ta;
+        }
+    }
+    function toggled() {
+        $("#details-box").slideToggle("slow");
+    }
+    function add() {
+        var quantity = document.getElementById("num").value;
+        var item = {
+            name: tt,
+            price: parseFloat(pp),
+            quant: parseInt(quantity)
+        };
+
+        var cart = JSON.parse(localStorage.getItem('myCart')) || [];
+        cart.push(item);
+        localStorage.setItem('myCart', JSON.stringify(cart));
+        alert("Book added to cart");}
+
+</script>
+
+</body>
+</html>

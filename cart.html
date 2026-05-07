@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body onload="display()" class="container mt-5">
+
+    <h2>Shopping Cart</h2>
+    <hr>
+
+    <div class="row">
+        <div class="col-12">
+            <table class="table" id="tbl">
+                </table>
+        </div>
+    </div>
+
+    <div class="row mt-3">
+        <div class="col-12 text-right">
+            <h4>Total: <span id="total">0</span> SAR</h4>
+            <br>
+            <button class="btn btn-secondary" onclick="checkout()">Order</button>
+            <a href="produtsPage.html" class="btn btn-outline-dark">Back to Products</a>
+        </div>
+    </div>
+
+    <script>
+        var cartitems = JSON.parse(localStorage.getItem('myCart')) || [];
+
+        function display() {
+            var ta = "<thead><tr><th>Product</th><th>Price</th><th>Quantity</th><th>Subtotal</th></tr></thead><tbody>";
+            var grand = 0;
+
+            if (cartitems.length == 0) {
+                document.getElementById("tbl").innerHTML = "<tr><td colspan='4' class='text-center'>Your cart is empty</td></tr>";
+                document.getElementById("total").innerText = "0";
+           
+            }
+
+            for (var i = 0; i < cartitems.length; i++) {
+                var sub = cartitems[i].price * cartitems[i].quant;
+                grand += sub;
+
+                ta += "<tr>";
+                ta += "<td>" + cartitems[i].name + "</td>";
+                ta += "<td>" + cartitems[i].price + " SAR</td>";
+                ta += "<td>" + cartitems[i].quant + "</td>";
+                ta += "<td>" + sub + " SAR</td>";
+                ta += "</tr>";
+            }
+            ta += "</tbody>";
+            
+            document.getElementById("tbl").innerHTML = ta;
+            document.getElementById("total").innerText = grand;
+        }
+        function checkout() {
+            if (cartitems.length == 0) {
+                alert("Cart is empty");
+                return;
+            }
+
+            alert("Payment successful");
+ 
+            localStorage.removeItem('myCart');
+            cartitems = [];
+            display();
+        }
+    </script>
+</body>
+</html>

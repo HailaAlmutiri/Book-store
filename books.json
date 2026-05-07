@@ -1,0 +1,235 @@
+[
+  {
+    "id": 1,
+    "img": "img2/theoofgolden.jpg",
+    "title": "Theo of Golden",
+    "price": "50 SAR",
+    "description": "One spring morning, a stranger named Theo arrives in the small Southern city of Golden. He doesn't explain much about where he came from or why he's there—but when he visits the local coffeehouse, where pencil portraits of the people of Golden hang on the walls, he begins purchasing them, one at a time, and giving each portrait to the person depicted. In exchange, he asks only for the person's story. And so portrait by portrait, person by person, secrets are revealed, regrets are shared, and ordinary lives are profoundly altered.",
+  
+      "author": "Allen Levi",
+      "publish_date": "October 03, 2025",
+      "language": "English",
+      "category": "novel"
+    
+  },
+  {
+    "id": 2,
+    "img": "img2/TheMinistryfortheFuture.jpg",
+    "title": "The Ministry for the Future",
+    "price": "44 SAR",
+    "description": "The Ministry for the Future is a masterpiece of the imagination, using fictional eyewitness accounts to tell the story of how climate change will affect us all. Its setting is not a desolate, postapocalyptic world, but a future that is almost upon us. Chosen by Barack Obama as one of his favorite books of the year, this extraordinary novel from visionary science fiction writer Kim Stanley Robinson will change the way you think about the climate crisis",
+  
+      "author": "Kim Stanley Robinson",
+      "publish_date": "October 19, 2021",
+      "language": "English",
+      "category": "novel"
+
+  },
+  {
+    "id": 3,
+    "img": "img2/TheIncandescent.jpg",
+    "title": "The Incandescent",
+    "price": "37 SAR",
+    "description": "Doctor Walden is the Director of Magic at Chetwood School and one of the most powerful magicians in England. Her days consist of meetings, teaching A-Level Invocation to four talented and chaotic sixth formers, more meetings, and securing the school's boundaries from demonic incursions. Walden is good at her job—no, Walden is great at her job. But when a new threat arises in the form of the ancient demon who has long waited patiently just beyond the school’s wards, even Walden and the aggressively competent Chief Marshal, Laura Kenning, may not be able to contain it.It is Waldens responsibility to keep her school with its six hundred students and centuries-old legacy safe. And it is possible the entity Walden most needs to keep her school safe from—is herself.",
+    "product_details": {
+      "author": "EMILY TESH",
+      "publish_date": "May 13, 2025",
+      "language": "English",
+      "category": "novel"
+    }
+  },
+  {
+    "id": 4,
+    "img": "img2/ParableoftheSower.webp",
+    "title": "Parable of the Sower",
+    "price": "30 SAR",
+    "description": "Fifteen-year-old Lauren Olamina lives inside a gated community with her preacher father, family, and neighbors, sheltered from the surrounding social chaos and anarchy caused by climate change and economic crisis. In a society where any vulnerability is a risk, she suffers from hyperempathy--a debilitating sensitivity to others' emotions.Precocious and clear-eyed, Lauren must make her voice heard in order to protect her loved ones from the imminent disasters her small community stubbornly ignores. But what begins as a fight for survival soon leads to something much more: the birth of a new faith . . . and a startling vision of human destiny.",
+   
+      "author": "Octavia E. Butler",
+      "publish_date": "April 30, 2019",
+      "language": "English",
+      "category": "novel"
+    
+  },
+ {
+    "id": 5,
+    "img": "img2/Ruthie.jpg",
+    "title": "Ruthie",
+    "price": "30 SAR",
+    "description": "Ruthie is a prince (a dog) who has it all: a bone, a fish, and a piece of cake he’s been saving for three years. He lives in a castle (a house), is beloved by his queen (his owner), and enjoys beauty-naps, butterberry pancakes and staying squeaky clean with a daily bubble bath. But still, Ruthie longs to explore beyond the castle walls. When a chance to escape presents itself, Ruthie soon finds exploring isn't all it's cracked up to be. He is cold, hungry and worst of all: STINKY! Ruthie's royal subjects (forest animals) do their best to help, but nothing is as perfect as it was in his castle and, worst of all, he misses his queen. Will Ruthie ever be able to find his way home? And will he be able to make some friends along the way?",
+  
+      "author": "ESMÉ SHAPIRO",
+      "publish_date": "March 17, 2026",
+      "language": "English",
+      "category": "kids book"
+   
+  },
+  {
+    "id": 6,
+    "img": "img2/JudgyBunnyandtheTerribleBeach.jpg",
+    "title": "Judgy Bunny and the Terrible Beach",
+    "price": "20 SAR",
+    "description": "For this judgy bunny, nothing's worse than a day at the beach. The sun? Too bright. That view of the blue sky and gleaming sand? Awful. Sand castles? Ugh. Ice cream? Yucky. Yep. Everything is TERRIBLE. It has to be, right? There's no way she could EVER have a good time. Not with the inexplicably friendly bunny who's offered to fly kites with her, or the ice cream cone that possibly isn't a flavor she detests, or boogie boarding, which she actually... isn't bad at! Okay. MAYBE it's fun. But she'll be the judge of that.",
+
+      "author": "Kim Stanley Robinson",
+      "publish_date": "March 24, 2026",
+      "language": "English",
+      "category": "kids book"
+   
+  },
+  {
+    "id": 7,
+    "img": "img2/TheFutureBook.jpg",
+    "title": "The Future Book",
+    "price": "60 SAR",
+    "description": "Do you want to know what the future is like? Turn the pages to get a glimpse at the world of tomorrow and its unexpected words, strange social customs, and mind-blowing colors!",
+  
+      "author": "Mac Barnett and Shawn Harris",
+      "publish_date": "March 03, 2026",
+      "language": "English",
+      "category": "kids book"
+    
+  },
+  {
+    "id": 8,
+    "img": "img2/IReallyWanttoBeaCat.jpg",
+    "title": "I Really Want to Be a Cat",
+    "price": "33 SAR",
+    "description": "When you're a cat, you answer to no one! Cats are quiet like ninjas, masters of hide-and-seek, and they aren't afraid of anything! Why wouldn't you want to be a cat? Well, maybe there's one reason... This funny and unexpected story celebrates all the reasons our furry friends are the coolest and why it would be fun to live like one!",
+  
+      "author": "Helen Hancocks",
+      "publish_date": "March 03, 2026",
+      "language": "English",
+      "category": "kids book"
+   
+  },
+  {
+    "id": 9,
+    "img": "img2/TheMidnightLibrary.jpg",
+    "title": "The Midnight Library",
+    "price": "52 SAR",
+    "description": "Between life and death there is a library, and within that library, the shelves go on forever. Every book provides a chance to try another life you could have lived.",
+  
+      "author": "Matt Haig",
+      "publish_date": "September 29, 2020",
+      "language": "English",
+      "category": "novel"
+   
+  },
+  {
+    "id": 10,
+    "img": "img2/AtomicHabits.jpg",
+    "title": "Atomic Habits",
+    "price": "65 SAR",
+    "description": "No matter your goals, Atomic Habits offers a proven framework for improving every day. James Clear reveals practical strategies that will teach you exactly how to form good habits.",
+   
+      "author": "James Clear",
+      "publish_date": "October 16, 2018",
+      "language": "English",
+      "category": "novel"
+    
+  },
+  {"id": 11,
+    "img": "img2/TheVeryHungryCaterpillar.jpg",
+    "title": "The Very Hungry Caterpillar",
+    "price": "35 SAR",
+    "description": "A classic children's story about a small caterpillar who eats his way through a wide variety of food before pupating and emerging as a butterfly.",
+  
+      "author": "Eric Carle",
+      "publish_date": "June 03, 1969",
+      "language": "English",
+      "category": "kids book"
+   
+  },
+  {
+    "id": 12,
+    "img": "img2/WheretheWild.jpg",
+    "title": "Where the Wild Things Are",
+    "price": "42 SAR",
+    "description": "Max, a young boy who sails to an island inhabited by creatures known as the Wild Things, becomes their king in this beloved picture book.",
+  
+      "author": "Maurice Sendak",
+      "publish_date": "November 01, 1963",
+      "language": "English",
+      "category": "kids book"
+    
+  },
+  {
+    "id": 13,
+    "img": "img2/think fast.jpg",
+    "title": "Thinking, Fast and Slow",
+    "price": "70 SAR",
+    "description": "Daniel Kahneman, a psychologist and Nobel laureate in economics, takes us on a groundbreaking tour of the mind and explains the two systems that drive the way we think.",
+  
+      "author": "Daniel Kahneman",
+      "publish_date": "October 25, 2011",
+      "language": "English",
+      "category": "Non-Fiction"
+    
+  },
+  {
+    "id": 14,
+    "img": "img2/Sapiens.jpg",
+    "title": "Sapiens: A Brief History of Humankind",
+    "price": "65 SAR",
+    "description": "Yuval Noah Harari spans the whole of human history, from the very first humans to walk the earth to the radical—and sometimes devastating—breakthroughs of the Cognitive, Agricultural, and Scientific Revolutions.",
+   
+      "author": "Yuval Noah Harari",
+      "publish_date": "February 10, 2015",
+      "language": "English",
+      "category": "Non-Fiction"
+   
+  },
+  {
+    "id": 15,
+    "img": "img2/Educated.jpg",
+    "title": "Educated",
+    "price": "45 SAR",
+    "description": "An unforgettable memoir about a young girl who, kept out of school, leaves her survivalist family and goes on to graduate from Cambridge University.",
+    
+      "author": "Tara Westover",
+      "publish_date": "February 20, 2018",
+      "language": "English",
+      "category": "Non-Fiction"
+   
+  },
+  {
+    "id": 16,
+    "img": "img2/DeepWork.jpg",
+    "title": "Deep Work",
+    "price": "55 SAR",
+    "description": "Rules for focused success in a distracted world. Cal Newport argues that the ability to focus without distraction is a superpower in our increasingly competitive economy.",
+   
+      "author": "Cal Newport",
+      "publish_date": "January 05, 2016",
+      "language": "English",
+      "category": "Non-Fiction"
+    
+  },
+  {
+    "id": 17,
+    "img": "img2/TheImmortal.jpg",
+    "title": "The Immortal Life of Henrietta Lacks",
+    "price": "40 SAR",
+    "description": "The story of Henrietta Lacks, whose cells—taken without her knowledge—became one of the most important tools in medicine, affecting millions of lives.",
+    
+      "author": "Rebecca Skloot",
+      "publish_date": "February 02, 2010",
+      "language": "English",
+      "category": "Non-Fiction"
+    
+  },
+  {
+    "id": 18,
+    "img": "img2/Grit.jpg",
+    "title": "Grit: The Power of Passion and Perseverance",
+    "price": "50 SAR",
+    "description": "Psychologist Angela Duckworth shows anyone striving to succeed that the secret to outstanding achievement is not talent but a special blend of passion and persistence.",
+   
+      "author": "Angela Duckworth",
+      "publish_date": "May 03, 2016",
+      "language": "English",
+      "category": "Non-Fiction"
+   
+  }
+]

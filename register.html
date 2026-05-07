@@ -68,7 +68,6 @@ e.preventDefault();
   var passPattern = /(?=.*[a-z])(?=.*[A-Z])(?=.*\d)/;
 
   if (!passPattern.test(fieldFirstValue)) {
-    e.preventDefault();
    Swal.fire({
   icon: "warning",
   title: "Weak Password",

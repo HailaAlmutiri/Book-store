@@ -20,7 +20,7 @@
 <input type="password" id="loginPass"><br><br>
 
 <button type="submit">Login</button>
-<p> donot have account? <a href="Register.html" target="_blank">Create Account</a></p>
+<p> donot have account? <a href="register.html" target="_blank">Create Account</a></p>
 
 
 </form>
@@ -40,7 +40,7 @@ document.getElementById("loginForm").addEventListener("submit", function(e) {
       icon: "success",
       title: "Login Successful"
     }).then(() => {
-      window.location.href = "home.html"; 
+      window.location.href = "homepage.html"; 
     });
   } else {
     Swal.fire({

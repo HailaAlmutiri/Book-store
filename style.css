@@ -98,14 +98,14 @@ img { max-width: 100%; height: auto; }
 }
 
 .btn-primary {
-  background-color: var(--eggplant);
-  border-color: var(--eggplant);
-  color: var(--white);
+  background-color: var(--eggplant) !important;
+  border-color: var(--eggplant) !important;
+  color: var(--white) !important;
 }
 .btn-primary:hover {
-  background-color: var(--dark-charcoal);
-  border-color: var(--dark-charcoal);
-  color: var(--white);
+  background-color: var(--dark-charcoal) !important;
+  border-color: var(--dark-charcoal) !important;
+  color: var(--white) !important;
   transform: translateY(-2px);
   box-shadow: 0 6px 20px rgba(93,68,89,0.3);
 }
@@ -632,4 +632,14 @@ footer button a { color: var(--white) !important; text-decoration: none; }
   font-size: 1rem;
   color: var(--dark-charcoal);
   margin: 0;
+}
+/* ── TEAM PAGE FIX ──────────────────────────────────────── */
+.team-card img {
+  width: 120px !important;
+  height: 120px !important;
+  border-radius: 50% !important;
+  object-fit: cover !important;
+  display: block;
+  margin: 0 auto 16px;
+  border: 4px solid var(--silver);
 }

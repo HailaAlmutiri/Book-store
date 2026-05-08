@@ -8,97 +8,110 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   </head>
   <body>
+
+    <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg fixed-top">
-  <div class="container">
-    <a class="navbar-brand" href="homepage.html">Book<span>Store</span></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navMenu">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link" href="homepage.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="produtsPage.html">Products</a></li>
-        <li class="nav-item"><a class="nav-link" href="companyPage.html">About</a></li>
-        <li class="nav-item"><a class="nav-link active" href="team.html">Team</a></li>
-        <li class="nav-item"><a class="nav-link" href="cart.html">🛒 Cart</a></li>
-        <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
+      <div class="container">
+        <a class="navbar-brand" href="homepage.html">Book<span>Store</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="homepage.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="produtsPage.html">Products</a></li>
+            <li class="nav-item"><a class="nav-link" href="companyPage.html">About</a></li>
+            <li class="nav-item"><a class="nav-link active" href="team.html">Team</a></li>
+            <li class="nav-item"><a class="nav-link" href="cart.html">🛒 Cart</a></li>
+            <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HEADER -->
     <header>
       <h1>Developing Team</h1>
-      <p><a href="homepage.html">Back to Home</a></p>
     </header>
 
-    <div>
-      <h2>Our Team Members</h2>
+    <!-- TEAM CARDS -->
+    <section class="container section-padding">
+      <h2 class="section-title text-center">Our Team Members</h2>
+      <div class="divider mx-auto mb-5"></div>
 
-      <div>
-        <img src="img/Team/image1.jpg" alt="Sadeem Al-Mohamadi">
-        <p>Sadeem Al-Mohamadi - Project Leader</p>
+      <div class="row g-4 justify-content-center">
+
+        <div class="col-md-3 col-sm-6">
+          <div class="team-card">
+            <img src="img/Team/image1.jpg" alt="Sadeem Al-Mohamadi">
+            <h5>Sadeem Al-Mohamadi</h5>
+            <p>🌟 Project Leader</p>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+          <div class="team-card">
+            <img src="img/Team/image2.jpg" alt="Basma Almutairi">
+            <h5>Basma Almutairi</h5>
+            <p>📖 Book Page Designer</p>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+          <div class="team-card">
+            <img src="img/Team/image3.jpg" alt="Haila Al-Mutairi">
+            <h5>Haila Al-Mutairi</h5>
+            <p>🎨 CSS & Bootstrap</p>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+          <div class="team-card">
+            <img src="img/Team/image4.jpg" alt="Raghad Alharbi">
+            <h5>Raghad Alharbi</h5>
+            <p>🖥️ UI Designer & Styling</p>
+          </div>
+        </div>
+
       </div>
+    </section>
 
-      <div>
-        <img src="img/Team/image2.jpg" alt="Basma Almutairi">
-        <p>Basma Almutairi - Book Page Designer</p>
-      </div>
+    <!-- CONTRIBUTION TABLE -->
+    <section class="container pb-5">
+      <h2 class="section-title text-center mb-4">Group Contribution</h2>
+      <div class="divider mx-auto mb-4"></div>
 
-      <div>
-        <img src="img/Team/image3.jpg" alt="Haila Al mutairi">
-        <p>Haila Al mutairi - Content Writer</p>
-      </div>
+      <table border="1" class="w-100">
+        <tr>
+          <th>Student Name</th>
+          <th>Responsibilities</th>
+        </tr>
+        <tr>
+          <td>Sadeem Al-Mohamadi</td>
+          <td>Home Page · About Company · Developing Team Page</td>
+        </tr>
+        <tr>
+          <td>Raghad Alharbi</td>
+          <td>Products Page · Single Product Page</td>
+        </tr>
+        <tr>
+          <td>Basma Almutairi</td>
+          <td>Registration Page · Login Page</td>
+        </tr>
+        <tr>
+          <td>Haila Al-Mutairi</td>
+          <td>CSS Styling · Bootstrap Implementation</td>
+        </tr>
+      </table>
+    </section>
 
-      <div>
-        <img src="img/Team/image4.jpg" alt="Raghad Alharbi">
-        <p>Raghad Alharbi - UI Designer and Styling</p>
-      </div>
-
-    </div>
-<h2>Group Contribution</h2>
-
-<table border="1">
-  <tr>
-    <th>Student Name</th>
-    <th>Responsibilities</th>
-  </tr>
-
-  <tr>
-    <td>Sadeem Al-Mohamadi</td>
-    <td>
-      Home Page <br>
-      About Company Page <br>
-      About Developing Team Page
-    </td>
-  </tr>
-
-  <tr>
-    <td>Raghad Alharbi</td>
-    <td>
-      Products Page <br>
-      Single Product Page
-    </td>
-  </tr>
-
-  <tr>
-    <td>Basma Almutairi</td>
-    <td>
-      Registration Page <br>
-      Login Page
-    </td>
-  </tr>
-
-  <tr>
-    <td>Haila Al-Mutairi</td>
-    <td>
-      CSS Styling <br>
-      Bootstrap Implementation
-    </td>
-  </tr>
-</table>
+    <!-- FOOTER -->
     <footer>
-      <p>&copy; The Book Store</p>
+      <div class="container text-center">
+        <p>&copy; 2026 The Book Store. All rights reserved.</p>
+      </div>
     </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

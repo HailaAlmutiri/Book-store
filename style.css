@@ -146,9 +146,9 @@ img { max-width: 100%; height: auto; }
 }
 
 /* ── CAROUSEL ───────────────────────────────────────────── */
-.carousel { margin-top: 66px; }
+.carousel { margin-top: 40px; }
 
-.carousel-item { height: 440px; }
+.carousel-item { height: 150px; }
 
 .carousel-item:nth-child(1) {
   background: linear-gradient(135deg, var(--dark-charcoal) 0%, var(--eggplant) 100%);

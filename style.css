@@ -681,3 +681,49 @@ footer button a { color: var(--white) !important; text-decoration: none; }
   background-color: var(--eggplant-light);
   padding: 70px 0;
 }
+/* ── SINGLE PRODUCT FIX ─────────────────────────────────── */
+#product-details .row {
+  margin-top: 30px;
+  align-items: flex-start;
+}
+
+#product-details img {
+  width: 100% !important;
+  max-height: 420px !important;
+  object-fit: contain !important;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  background-color: var(--light-bg);
+  padding: 16px;
+  margin-top: 20px;
+}
+
+#product-details h2 {
+  font-family: var(--font-heading);
+  font-size: 1.8rem;
+  color: var(--dark-charcoal);
+  margin-bottom: 10px;
+}
+
+#product-details .h4 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--ebony);
+  margin-bottom: 16px;
+}
+
+#product-details .btn-light {
+  background-color: var(--eggplant-light);
+  color: var(--eggplant);
+  border: none;
+  font-weight: 600;
+}
+
+#product-details select {
+  border: 2px solid var(--silver);
+  border-radius: 8px;
+  padding: 6px 12px;
+}
+.container.mt-5 {
+  padding-top: 30px !important;
+}

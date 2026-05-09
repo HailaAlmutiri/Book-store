@@ -9,8 +9,26 @@
 </head>
 
 <body> 
-    <h2>Shopping Cart</h2>
-    <hr>
+     <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="homepage.html">Book<span>Store</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="homepage.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="produtsPage.html">Products</a></li>
+            <li class="nav-item"><a class="nav-link active" href="companyPage.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="team.html">Team</a></li>
+            <li class="nav-item"><a class="nav-link" href="cart.html">🛒 Cart</a></li>
+            <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <h2 style="margin-top: 80px;">Shopping Cart</h2>    <hr>
 
     <div class="row">
         <div class="col-12">
@@ -32,7 +50,7 @@
         var cartitems = JSON.parse(localStorage.getItem('myCart')) || [];
 
         function display() {
-            var ta = "<thead><tr><th>Product</th><th>Price</th><th>Quantity</th><th>Subtotal</th></tr></thead><tbody>";
+            var ta = "<thead><tr><th>Product</th><th>Price</th><th>Quantity</th><th>Subtotal</th></tr></thead><tbody>";;
             var grand = 0;
 
             if (cartitems.length == 0) {
